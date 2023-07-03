@@ -170,7 +170,15 @@ section .main .button:hover i{
     transform: translateX(6px);
 }
 
-
+#menu-bar{
+    display: none;
+}
+section label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
 
 /*Products*/
 
@@ -802,4 +810,22 @@ footer .footer_main .tag .search_bar button{
     border-radius: 25px;
     color: white;
     cursor: pointer;
+}
+
+@media(max-width:991px){
+    section{
+        padding: 20px;
+    }
+    section label{
+        display: initial;
+    }
+    section .navbar{
+        position: absolute;
+        top:100%;left: 0; right: 0;
+        background: white;
+        border-top: 1px solid rgba(0,0,0,.1)
+    }
+    header .navbar ul li{
+        width: 100px;
+    }
 }

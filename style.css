@@ -73,7 +73,7 @@ section nav ul li a{
     transition: 0.2s;
 }
 
-section nav ul li a:hover{
+section nav ul li a:hover, .active{
     color: #c72092;
 }
 

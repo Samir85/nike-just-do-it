@@ -23,82 +23,44 @@ html{
     background: linear-gradient(to top, #c72092 , #6c14d0);
 }
 
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0 0 8px rgba(0,0,0,0.6);
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+.container{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    overflow: cover;
     z-index: 100;
 }
-.header .open-nav-menu{
-    height: 34px;
-    width: 40px;
-    margin-right: 15px;
-    display: none;
+nav{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
 }
-.header .open-nav-menu span{
-    display: block;
-    height: 3px;
-    width: 24px;
-    background-color: #000000;
-    position: relative;
+nav ul li{
+    display: inline-block;
+    margin: 5px 12px;
 }
-.header .open-nav-menu span:before,
-.header .open-nav-menu span:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    box-sizing: border-box ;
+nav ul li a{
+    color: #c72092;
+    text-decoration: none;
+    font-size: 18px;
 }
-.header .open-nav-menu span:before{
-    top: -7px;
+nav ul li a:hover{
+    color: rgba(0,0,0,0.25)
 }
-.header .open-nav-menu span:after{
-    top: 7px;
-}
-
-.header .container .logo{
-    font-size: 25px;
+.container h1{
+    font-size: 35px;
     color: #c72092;
     margin: 5px 0;
     cursor: pointer;
     position: relative;
-    left: -4%;
+    left: 4%;
 }
-
-.header .container .logo span{
+.container span{
     color: #6c14d0;
     text-decoration: underline;
-}
-
-.header .navbar ul{
-    list-style: none;
-}
-
-.header .navbar ul li{
-    display: inline-block;
-    margin: 5px 15px;
-}
-
-.header .navbar ul li a{
-    text-decoration: none;
-    color: black;
-    transition: 0.2s;
-}
-
-.header .navbar ul li a:hover, .active{
-    color: #c72092;
 }
 
 section{
@@ -143,15 +105,16 @@ section .main .main_content .main_text p{
 }
 
 section .main .main_content .main_image img{
-    width: 520px;
+    width: 350px;
     position: relative;
-    left: 20px;
-    top: 70px;
+    left: 90px;
+    top: 80px;
 }
 section .main .button{
     position: absolute;
     left: 6%;
     padding: 10px 20px;
+    margin: 35px ;
     border-radius: 30px;
     background: linear-gradient(to right,#c72092 , #6c14d0);
 }
@@ -648,6 +611,7 @@ section .main .button:hover i{
 }
 
 .login_form .right .forget{
+    color: blueviolet;
     position: relative;
     left: 60%;
     margin: 6px 0 10px 0;
@@ -803,32 +767,4 @@ footer .footer_main .tag .search_bar button{
     border-radius: 25px;
     color: white;
     cursor: pointer;
-}
-@media(max-width:991px){
-    .header .navbar{
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 280px;
-        height: 100%;
-        overflow-y: auto;
-        background-color: #222222;
-        z-index: 1000;
-        padding: 25px 0px ;
-    }
-    .header .open-nav-menu{
-        display: flex;
-    }
-    .header .navbar ul li{
-        width: 100%;
-    }
-    .header .navbar  ul li{
-        display: block;
-        margin: 0;
-    }
-    .header .navbar ul li a {
-        color: white;
-        padding: 12px 15px;
-        border-bottom: 1px solid #333333;
-    }
 }
